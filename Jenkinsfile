@@ -25,7 +25,7 @@ pipeline {
         stage('Login to DockerHub') {
             steps {
                 sh '''
-                echo "<YOUR_DOCKER_PASSWORD>" | docker login -u subasinik --password-stdin
+                echo "YOUR_DOCKER_TOKEN" | docker login -u subasinik --password-stdin
                 '''
             }
         }
